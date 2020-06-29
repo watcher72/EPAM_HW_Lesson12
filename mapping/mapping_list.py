@@ -1,15 +1,3 @@
-import random
-
-from memory_profiler import profile
-
-
-ABC = 'abcdefghijklmnopqrstufwxyzABCDEFGHIJKLMNOPQRSTUFWXYZ'
-
-
-def prepare_data(letters, words):
-    return [''.join(random.sample(ABC, letters)) for _ in range(words)]
-
-
 def to_upper_v1(data):
     return map(lambda x: x.upper(), data)
 
